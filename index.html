@@ -11,42 +11,72 @@
   <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="favicon (7).ico" type="image/x-icon">
 <link rel="icon" href="favicon (7).ico" type="image/x-icon">
+
+  <!-- Material Design -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 	<style>
 		.fa{
-			color:#ef6c00;
+			color:#008932;
 		}
 	</style>
 
-   <nav class="orange darken-2">
+   <nav class="green darken-2">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <img href="#!" class="brand-logo" src="./images/nspc-logo-new.png" style="height: 100%; padding-left: 4%; padding-right: 4%;">
+      <!-- <img href="#!" class="brand-logo" src="./images/nspc-logo-new.png"> -->
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Link1</a></li>
-        <li><a href="#">Link2</a></li>
-        <li><a href="#">Link3</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Schemes</a></li>
+        <li>
+          <a href="#">Useful Links</a>
+          <div href="#" class="mdc-menu mdc-menu-surface">
+            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+              <li class="mdc-list-item" role="menuitem">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text">A Menu Item</span>
+              </li>
+              <li class="mdc-list-item" role="menuitem">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text">Another Menu Item</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">News Bulletin</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <a href="#" class="right btn-large green lighten-1" style="z-index: -1; align-items: center;">Login</a>
         
       </ul>
       <ul class="side-nav" id="mobile-demo">
-       <li><a href="#">Link1</a></li>
-        <li><a href="#">Link2</a></li>
-        <li><a href="#">Link3</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Schemes</a></li>
+        <li><a href="#">Useful Links</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">News Bulletin</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="btn-large green lighten-3">Login</a></li>
+        
       </ul>
     </div>
   </nav>
         
   
-  <div class="section no-pad-bot orange lighten-5" id="index-banner">
+  <!-- <div class="section no-pad-bot green lighten-5" style="background-image: url('./images/social-protection.png'); background-size: cover;" id="index-banner"> -->
+    <div class="section no-pad-bot green lighten-5" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center  orange-text text-darken-3">Starter Template</h1>
+      <h1 class="header center  green-text text-darken-3">National Social Protection Digital Platform</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h5>
+        <!-- <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h5> -->
       </div>
       <div class="row center">
-        <a href="#" class="btn-large waves-effect waves-light orange darken-3">View more</a>
+        <a href="#" class="btn-large waves-effect waves-light green darken-3 mdc-dialog__open" data-mdc-dialog-action="open">Scheme Eligibility Check</a>
       </div>
       <br><br>
 
@@ -55,8 +85,54 @@
 
 
   <div class="container">
+    <div class="container center" style="padding: 6%;">
+      <!-- <div class="section center"> -->
+        <!-- <h3 class="center">Scheme Eligibility Check</h3> -->
+        <!-- <div class="row center" style="padding: 5vh;"> -->
+          <!-- <a href="#" class="center btn-large waves-effect waves-light green darken-3 mdc-dialog__open" data-mdc-dialog-action="open">Scheme Eligibility Check</a> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    
+    <div class="mdc-dialog mdc-dialog--close mdc-dialog--fullscreen">
+      <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="my-dialog-title"
+            aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__header">
+              <h2 class="mdc-dialog__title" id="my-dialog-title">
+                Full-Screen Dialog Title
+              </h2>
+              <button class="mdc-icon-button material-icons mdc-dialog__close"
+              data-mdc-dialog-action="close">
+                close
+              </button>
+            </div>
+            <div class="mdc-dialog__content" id="my-dialog-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed scelerisque metus dapibus, maximus massa pulvinar, commodo nunc.
+              Quisque vitae luctus lectus, ut tempus ipsum. Sed suscipit gravida scelerisque.
+              Aenean vulputate elementum est, quis consectetur orci consectetur ac.
+              Quisque accumsan vel nisi id dapibus. Suspendisse nec urna eu massa ornare rutrum.
+              Vivamus at nisi sit amet nulla pretium volutpat sit amet in justo. Donec mi metus,
+              interdum ac tincidunt at, vehicula vitae nisl. Morbi fermentum dapibus massa,
+              nec lobortis massa vestibulum eu.
+            </div>
+            <div class="mdc-dialog__actions">
+              <button type="button" class="mdc-button mdc-dialog__button"
+              data-mdc-dialog-action="ok">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">OK</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-dialog__scrim"></div>
+    </div>
+    
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
@@ -98,7 +174,72 @@
     </div>
   </div>
 
-  <footer class="page-footer orange darken-3">
+
+<div class="section green lighten-5" id="contactus">
+  <div class="container section no-pad-top">
+
+    <div class="section">
+      <br>
+      <br>
+      <h2>Contact Us</h2>	
+      
+      <div class="row">
+        
+        <form class="col s8">
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="name" type="text" class="validate">
+              <label for="name">Your Name</label>
+            </div>
+            
+            
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Your Email</label>
+            </div>
+          </div><!--row-->
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="message-sub" type="email" class="validate">
+              <label for="message-sub">Message Subject</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="text_area" class="materialize-textarea"></textarea>
+              <label for="text_area">Your Message</label>
+            </div>
+          </div>
+          
+          
+          <div>
+            <a class="waves-effect waves-light btn green darken-3">Send Message<i class="mdi-content-send right"></i></a>
+          </div>
+        </form>
+        
+        <div class="col s12 m4">
+          <p>
+            Reach us at our office helpline number *********** or write us at our support email example@nspdp.gov.kh.
+            <br>
+            Also check out our official social media handles.
+          </p>
+          <ul class="share-buttons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Share on Facebook"><img src="images/flat_web_icon_set/inverted/Facebook.png"></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img src="images/flat_web_icon_set/inverted/Twitter.png"></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="images/flat_web_icon_set/inverted/GooglePlus.png"></a></li>
+          </ul>
+        </div>
+      </div>
+        
+     
+</div>
+	</div>
+</div>
+
+  <footer class="page-footer green darken-3">
    
   
     <div class="footer-copyright">

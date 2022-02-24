@@ -5067,7 +5067,7 @@ nav {
     position: relative;
     height: 100%; }
     nav .nav-wrapper i {
-      font-size: 2rem; }
+      font-size: 1rem; }
   @media only screen and (min-width : 993px) {
     nav a.button-collapse {
       display: none; }
